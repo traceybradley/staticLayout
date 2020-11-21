@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+    padding: 0;
+}
+
+#container{
+	background-color: #331a5c;
+	/* background-image is the characteristic and you have to have an image file and the setup value is url('filename.jpg')*/
+	background-image: url('images/gradient.jpg');
+	/*this places the image 50% horizontal and 50% vertical*/
+    background-position: 50% 50%;
+    /*stretches the image to the full size of the section */
+    background-size:cover;
+	font-family: Roboto, sans-serif;
+	font-weight:bold;
+}
+
+#header {
+  	/*setting the color of the text in the header section */
+  	color:#fff;
+  	/*This is needed once you clear a float so it know it's height */
+  	overflow:auto;
+}
+
+#logo{
+	/*removes block characteristic and holds just the content to the left */
+	float:left;
+	margin:15px 0 0 15px;
+}
+
+#menu{	
+	/*removes block characteristic and holds just the content to the right */
+	float:right;
+}
+
+#tvsection {
+	/*tv image and text*/
+	color:#fff;
+	/*align text center*/
+	text-align: center;
+	padding-top:50px;
+	padding-bottom:50px;
+	line-height: 30px;
+}
+
+#whitesection {
+	color:#000;
+	background-color:#fff;
+	min-height: 250px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#whitesection div.logoholder{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	padding-left:75px;
+	padding-top:25px;
+	padding-bottom:25px;
+	vertical-align: middle;
+}
+
+#whitesection div.logos{
+	float:left;
+	width:250px;
+	margin-right: 75px;
+}
+
+/*Just ul.menu clas has no bullets*/
+ul.menulist {
+  list-style-type: none;
+  margin-top:25px;
+}
+
+ul.menulist li {
+	/*removes vertical items, makes them horizontal*/
+	float:left;
+	/*adds space to the right of the menu item*/
+	padding-right:50px;
+}
+
+/*any link within an li tag, within the ul.menulist*/
+ul.menulist li a {
+	color:#fff;
+	/*remove underline*/
+	text-decoration: none;
+}
+
+img.tv {
+	/*pushes image away from the top*/
+	margin-top:100px;
+	/*this makes the image like div section, google this*/
+	display: block;
+  	/*the next two push the image from each side*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	/*this specifies the width of the image*/
+  	width: 600px;
+}
+
+a.orange_button {
+	/*border-radius is rounded corners*/
+	border-radius: 3px;
+    background-color: #fe9000;
+    /*text-color*/
+    color:#fff;
+    text-decoration:none;
+    /*padding top right bottom left*/
+    padding:10px 50px 10px 50px;
+    margin-top:50px;
+    /*this makes the image like div section, google this*/
+    display:block;
+    width:100px;
+    /*the next two push the image from each side*/
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+em {
+	margin-top:75px;
+	display: block;
+}
+
+div#yahoo {
+	padding:25px 0 150px 0;
+	text-align: right;
+	width:600px;
+	/*the next two push the image from each side*/
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/*any time I need to clear a float in progress, use this*/
+br.clear {
+	clear:both;
+}
